@@ -15,7 +15,94 @@
 
 
 
+#### sound project organization
 
+your closest collaborator is you six months ago, but you do not reply to emails  
+*K. Broman*
+
+.pull-left[
+  &lt;img src="assets/figures/projectOrganizationCropped.png" width="95%"&gt;
+]
+
+.pull-right[
+.small[
+* segregate all materials for a project in one directory
+* organize according to prevailing conventions (e.g., R package structure)
+* maintain a clear separation of data, method, and output while unambiguously expressing the relationship among them
+* specify the computational environment used for the original analysis
+* organize such that another person can know what to expect from the plain meaning of the file and directory names
+* include README files
+]]
+
+.footnote[K. Broman [Steps toward reproducible research](https://kbroman.org/steps2rr/pages/organize.html)]
+
+
+---
+
+#### sound project organization
+
+the project determines the structure
+
+.pull-left[
+  📂 project_folder  
+  `\(~~~\)`📂 src  
+  `\(~~~\)`📂 output  
+  `\(~~~\)`📂 data  
+  `\(~~~~~\)`📂 raw  
+  `\(~~~~~\)`📂 processed  
+  `\(~~~~~\)`📂 temp  
+  `\(~~~\)`📄 README.md  
+  `\(~~~\)`📄 run_analyses.R  
+  `\(~~~\)`📄 .gitignore  
+]
+
+.pull-right[
+  📂 project_folder  
+  `\(~~~\)`📂 src  
+  `\(~~~\)`📂 output  
+  `\(~~~~~\)`📂 figures  
+  `\(~~~\)`📂 data  
+  `\(~~~~~\)`📄 README.md  
+  `\(~~~\)`📂 docs  
+  `\(~~~~~\)`📄 README.md  
+  `\(~~~\)`📄 README.md  
+  `\(~~~\)`📄 run_analyses.R  
+  `\(~~~\)`📄 .gitignore  
+]
+
+.footnote[C. Csefalvay [Structuring R Projects](https://chrisvoncsefalvay.com/2018/08/09/structuring-r-projects)]
+
+
+---
+
+.center[
+  &lt;img src="assets/figures/git_file_sizes.png" width="100%"&gt;
+]
+
+---
+
+#### hybrid approach: data in the cloud
+
+.center[
+  &lt;img src="assets/figures/data_in_the_cloud.png" width="100%"&gt;
+]
+
+
+---
+
+#### keep the raw data raw
+
+&lt;br&gt;
+&lt;br&gt;
+
+.center[
+  &lt;img src="assets/figures/Fleetwood-Mac-Cant-Go-Back-Love.jpg" width="70%"&gt;
+]
+
+.footnote[Wilson et al. 2017 [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510)]
+
+
+---
 class: inverse
 
 &lt;br&gt;
@@ -23,14 +110,15 @@ class: inverse
 
 “There are only two hard things in Computer Science: cache invalidation and naming things.”
 
-— Phil Karlton
+Phil Karlton
 
+???
+
+#### Phil Karlton quote
 
 ---
 
-#### BP: naming things - principles for file (and other things) names
-
---
+#### naming things: principles for file and object names
 
 * machine readable
 
@@ -69,7 +157,7 @@ class: inverse
 ---
 class: inverse
 
-#### BP: naming - names matter in times of stress
+#### names matter in times of stress
 
 which set of file(names)s would you prefer at 3 a.m. before a dealine?
 
@@ -80,55 +168,6 @@ which set of file(names)s would you prefer at 3 a.m. before a dealine?
 .footnote[J. Bryan [Naming things](https://speakerdeck.com/jennybc/how-to-name-files)]
 
 
----
-
-#### BP: employ sound project organization
-
-*your closest collaborator is you six months ago, but you do not reply to emails (K. Broman paraphrasing M. Holder)*
-
-.pull-left[
-  &lt;img src="assets/figures/projectOrganizationCropped.png" width="95%"&gt;
-]
-
-.pull-right[
-.small[
-* segregate all materials for a project in one directory
-* organize according to prevailing conventions (e.g., R package structure)
-* maintain a clear separation of data, method, and output while unambiguously expressing the relationship among them
-* specify the computational environment used for the original analysis
-* organize such that another person can know what to expect from the plain meaning of the file and directory names
-* include README files
-]]
-
-.footnote[K. Broman [Steps toward reproducible research](bit.ly/jsm2016)]
-
-
----
-
-.center[
-  &lt;img src="assets/figures/git_file_sizes.png" width="100%"&gt;
-]
-
----
-
-#### hybrid approach: data in the cloud
-
-.center[
-  &lt;img src="assets/figures/data_in_the_cloud.png" width="100%"&gt;
-]
-
-
----
-
-#### BP: keep the raw data raw
-
-* save the raw data
-
-.center[
-  &lt;img src="assets/figures/Fleetwood-Mac-Cant-Go-Back-Love.jpg" width="70%"&gt;
-]
-
-.footnote[Wilson et al. (2017) [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510)]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
